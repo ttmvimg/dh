@@ -1,3485 +1,522 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+  <meta name="description" content="雨滴导航-做一个简简单单的导航站"> 
+  <meta name="keywords" content="雨滴导航-做一个简简单单的导航站"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> 
+  <title>雨滴导航-做一个简简单单的导航站</title> 
+  <link rel="shortcut icon" href="favcion.png"> 
+  <link rel="stylesheet" href=" css/iconfont.css"> 
+  <link rel="stylesheet" href="../plug-in/normalize.css"> 
+  <link rel="stylesheet" href="css/style.css"> 
+  <link rel="stylesheet" type="text/css" href="css/style-min.css?0602"> 
+ </head> 
+ <body> 
+  <script type="text/javascript">
++function(){
+    var link = document.createElement('link');
+    var head = document.querySelector('head');
+    link.rel = 'stylesheet';
+    link.href = '//bx.dataoke.com//static/build/www/web/css/zujian.css?t=201904161709';
+    head.appendChild(link);
 
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="keywords" content="手掌导航,手掌,手掌影视,影视导航,导航,影视">
-  <meta name="description" content="努力打造全网最全最好的影视导航!">
-  <link rel="shortcut icon" href="https://alime-customer-upload-cn-hangzhou.oss-cn-hangzhou.aliyuncs.com/customer-upload/1617525763066_m9obx4okj6xr.png" type="image/x-icon">
-  <title>手掌导航 - 影视导航第一站</title>
-  <meta name='robots' content='max-image-preview:large' />
-<link rel='dns-prefetch' href='//cdn.staticfile.org' />
-<link rel='dns-prefetch' href='//s.w.org' />
-<link rel='stylesheet' id='wp-block-library-css'  href='css/style.min.css' type='text/css' media='all' />
-<link rel='stylesheet' id='style-css'  href='css/style.css' type='text/css' media='all' />
-<link rel='stylesheet' id='fonts-css'  href='css/style2.css' type='text/css' media='all' />
-<link rel='stylesheet' id='switchery-css'  href='https://cdn.staticfile.org/switchery/0.8.2/switchery.min.css' type='text/css' media='all' />
-<script type='text/javascript' id='cherry-ajax-script-js-extra'>
-/* <![CDATA[ */
-var wpieAjax = {"ajaxUrl":"https:\/\/www.bbbbbb.me\/wp-admin\/admin-ajax.php","themeUrl":"https:\/\/www.bbbbbb.me\/wp-content\/themes\/11267","homeUrl":"https:\/\/www.bbbbbb.me"};
-/* ]]> */
-</script>
-<script type='text/javascript' src='https://cdn.staticfile.org/jquery/3.3.1/jquery.min.js' id='cherry-ajax-script-js'></script>
-  <style type="text/css">
-      </style>
-  <script>
-    var isHomePage = "1";
-    var homeURL = "http://www.plamtv.com";
-  </script>
-</head>
-<body>
+    var fixedTagMall = document.createElement('a');
+    fixedTagMall.href = '//mall.wenruding.club';
+    fixedTagMall.target = '_blank';
+    fixedTagMall.className = 'dtk-fixed-tag-mall';
+    fixedTagMall.innerHTML = '<img src="http://hao.wenruding.club/img/tag-mall.png">商城';
 
+    var fixedTagTop = document.createElement('a');
+    fixedTagTop.href = 'javascript:;';
+    fixedTagTop.className = 'dtk-fixed-tag-top';
+    fixedTagTop.innerHTML = '<img src="http://hao.wenruding.club/img/tag-top.png">顶部';
+    fixedTagTop.onclick = function(){
+        var timer=setInterval(function(){
+           var scrollTop=document.documentElement.scrollTop||document.body.scrollTop;
+           var ispeed=Math.floor(-scrollTop/6);
+           console.log(ispeed)
+           if(scrollTop==0){
+               clearInterval(timer);
+           }
+           document.documentElement.scrollTop=document.body.scrollTop=scrollTop+ispeed;
+       },30)
+    }
 
-<aside class="sidenav">
-  <a class="image logo d-block" href="http://www.plamtv.com">
-    <img src="https://alime-customer-upload-cn-hangzhou.oss-cn-hangzhou.aliyuncs.com/customer-upload/1617525302763_3ejphwpd6g0p.png" alt="logo">
-  </a>
-  <div class="sidenav-desc">
-    影视导航第一站  </div>
-  <nav class="menu menu-collapse">
-                <div class="menu-group">
-                  <a href="#3" class="menu-item">
-            <i class="icon czs-thumbs-up"></i>优质站点          </a>
-        
-              </div>
-                <div class="menu-group">
-                  <a href="#2" class="menu-item">
-            <i class="icon czs-vimeo"></i>在线影视站          </a>
-        
-              </div>
-                <div class="menu-group">
-                  <a href="#1" class="menu-item">
-            <i class="icon czs-download-l"></i>影视下载站          </a>
-        
-              </div>
-                <div class="menu-group">
-                  <a href="#5" class="menu-item">
-            <i class="icon czs-code-fork"></i>磁力搜索站          </a>
-        
-              </div>
-                <div class="menu-group">
-                  <a href="#6" class="menu-item">
-            <i class="icon czs-cloud"></i>云盘搜索站          </a>
-        
-              </div>
-                <div class="menu-group">
-                  <a href="#7" class="menu-item">
-            <i class="icon czs-android"></i>影视APP          </a>
-        
-              </div>
-                <div class="menu-group">
-                  <a href="#8" class="menu-item">
-            <i class="icon czs-play-l"></i>资源站          </a>
-        
-              </div>
-        <div class="menu-group menu-about">
-      <a class="menu-item"
-         href="http://www.plamtv.com/?page_id=32">
-        <i class="icon czs-about-l"></i>关于我们
-      </a>
-    </div>
-      </nav>
-</aside>
+    var fixedTag = document.createElement('div');
+    fixedTag.className = 'dtk-fixed-tag';
+    fixedTag.appendChild(fixedTagMall);
+    fixedTag.appendChild(fixedTagTop);
 
-<main class="main" data-id="">
-  
-<div class="navbar-burger mobile-navbar-burger d-block" id="navbar-burger">
-  <span></span> <span></span> <span></span>
-</div>
+    document.body.appendChild(fixedTag);
 
-<nav class="navbar app-container" id="navbar">
-  <div class="navbar-brand">
-    <div class="navbar-burger d-block" id="navbar-burger">
-      <span></span> <span></span> <span></span>
-    </div>
-  </div>
-  <div class="navbar-item navbar-item-logo">
-    <a class="image navbar-logo" href="http://www.plamtv.com">
-      <img src="https://alime-customer-upload-cn-hangzhou.oss-cn-hangzhou.aliyuncs.com/customer-upload/1617525763066_m9obx4okj6xr.png" alt="logo">
-    </a>
-  </div>
+    window.onscroll = function(){
+        if (window.scrollY > window.innerHeight - 100 ){
+            fixedTag.style.display = 'block';
+        }
+        else {
+            fixedTag.style.display = 'none';
+        }
+    };
+}()</script> 
+  <div class="container" id="container"> 
+   <aside class="left-bar" id="leftBar"> 
+    <div class="title"> 
+     <p>雨滴导航</p> 
+    </div> 
+    <nav class="nav"> 
+     <div class="item active">
+      <a href=""><i class="iconfont icon-daohang2"></i>雨滴导航</a>
+      <i class="line"></i>
+     </div> 
+     <ul class="nav-item" id="navItem"> 
+      <li><a href="#bbs" class="active"><i class="iconfont icon-shequ"></i>雨滴系列</a></li> 
+      <li><a href="#sill"><i class="iconfont icon-blogger"></i>教师工具</a></li> 
+      <li><a href="#docs"><i class="iconfont icon-wendangdocument78"></i>专业文库</a></li> 
+      <li><a href="#tools"><i class="iconfont icon-tool"></i>实用工具</a></li> 
+      <li class="download"><a href="https://gitee.com/wenruding/navigation"><i class="iconfont icon-github"></i>源码下载</a></li> 
+     </ul> 
+     <div class="item comment">
+      <a target="_blank" href="http://liuyan.wenruding.club/"><i class="iconfont icon-liuyan"></i>留言</a>
+     </div> 
+    </nav> 
+   </aside> 
+   <section class="main"> 
+    <div id="mainContent"> 
+     <!-- 手机端菜单 --> 
+     <div id="menu-box"> 
+      <div id="menu"> 
+       <input type="checkbox" id="menu-form"> 
+       <label for="menu-form" class="menu-spin"> 
+        <div class="line diagonal line-1"></div> 
+        <div class="line horizontal"></div> 
+        <div class="line diagonal line-2"></div> </label> 
+      </div> 
+     </div> 
+     <!-- 雨滴搜索模块 --> 
+     <link rel="stylesheet" type="text/css" href="css/font-awesome.min1.css"> 
+     <link rel="shortcut icon" href="images/favicon.ico"> 
+     <link rel="apple-touch-icon" href="images/apple-touch-icon.png"> 
+     <link rel="ico" href="images/apple-touch-icon.png"> 
+     <script type="text/javascript">
+try {
+var urlhash = window.location.hash;
+if (!urlhash.match("fromapp")){
+if ((navigator.userAgent.match(/(iPhone|iPod|Android|iOS|iPad)/i))){
+window.location="index-m.html";
+}
+}
+}
+catch(err){
+}
+</script> 
+     <script>
+    $(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+    })
+</script> 
+     <style>ICONM
+.panel-top-links {margin-top:3px;font-size:14px;}
+</style> 
+     <div id="search" class="s-search"> 
+      <div id="search-list" class="hide-type-list"> 
+       <div class="s-type"> 
+        <span></span> 
+        <div class="s-type-list"> 
+         <label for="type-baidu">常用</label> 
+         <label for="type-163">音乐</label> 
+         <label for="type-saaee">影视</label> 
+         <label for="type-taobao">购物</label> 
+         <label for="type-pc6">工具</label> 
+        </div>
+       </div> 
+       <div class="search-group group-a s-current"> 
+        <span class="type-text">常用</span> 
+        <ul class="search-type"> 
+         <li><input checked="" hidden="" type="radio" name="type" id="type-baidu" value="https://www.baidu.com/s?wd=" data-placeholder="百度一下雨滴导航" /><label for="type-baidu"><span style="color:#2100E0">百度</span></label></li> 
+         <li><input type="radio" hidden="" name="type" id="type-google" value="https://gugeji.com/search?q=" data-placeholder="谷歌镜像" /><label for="type-google"><span style="color:#3B83FA">G</span><span style="color:#F3442C">o</span><span style="color:#FFC300">o</span><span style="color:#4696F8">g</span><span style="color:#2CAB4E">l</span><span style="color:#F54231">e</span></label></li> 
+         <li><input hidden="" type="radio" name="type" id="type-dribbble" value="https://wenku.baidu.com/search?word=" data-placeholder="百度文库" /><label for="type-dribbble"><span style="color:#EC4989">文库</span></label></li> 
+        </ul>
+       </div> 
+       <div class="search-group group-e">
+        <span class="type-text">音乐</span>
+        <ul class="search-type"> 
+         <li><input hidden="" type="radio" name="type" id="type-163" value="http://music.163.com/#/search/m/?s=" data-placeholder="网易云音乐" /><label for="type-163"><span style="color:#c70c0c">云音乐</span></label></li> 
+         <li><input hidden="" type="radio" name="type" id="type-xiami" value="http://www.xiami.com/search?key=" data-placeholder="虾米音乐" /><label for="type-xiami"><span style="color:#e96b00">虾米</span></label></li> 
+         <li><input hidden="" type="radio" name="type" id="type-baidu-music" value="http://music.baidu.com/search?key=" data-placeholder="百度音乐" /><label for="type-baidu-music"><span style="color:#2100E0">百度音乐</span></label></li> 
+         <li><input hidden="" type="radio" name="type" id="type-qq-music" value="https://y.qq.com/portal/search.html#searchid=1&amp;remoteplace=txt.yqq.top&amp;t=song&amp;w=" data-placeholder="QQ音乐" /><label for="type-qq-music"><span style="color:#2eb674">QQ音乐</span></label></li> 
+         <li><input hidden="" type="radio" name="type" id="type-ape8" value="http://ape8.cn/?s=" data-placeholder="ape8无损音乐" /><label for="type-ape8"><span style="color:#999">无损音乐</span></label></li> 
+        </ul>
+       </div> 
+       <div class="search-group group-f">
+        <span class="type-text">影视</span>
+        <ul class="search-type"> 
+         <li><input hidden="" type="radio" name="type" id="type-saaee" value="http://www.saaee.com/search?q=" data-placeholder="迅影网" /><label for="type-saaee"><span style="color:#262626">迅影网</span></label></li> 
+         <li><input hidden="" type="radio" name="type" id="type-gaoqing" value="http://gaoqing.la/?s=" data-placeholder="中国高清网" /><label for="type-gaoqing"><span style="color:#262626">中国高清网</span></label></li> 
+         <li><input hidden="" type="radio" name="type" id="type-youku" value="http://www.soku.com/search_video/q_" data-placeholder="优酷" /><label for="type-youku"><span style="color:#2fb3ff">优酷</span></label></li> 
+        </ul>
+       </div> 
+       <div class="search-group group-g">
+        <span class="type-text">购物</span>
+        <ul class="search-type"> 
+         <li><input hidden="" type="radio" name="type" id="type-taobao" value="https://s.taobao.com/search?q=" data-placeholder="淘宝" /><label for="type-taobao"><span style="color:#ff4400">淘宝</span></label></li> 
+         <li><input hidden="" type="radio" name="type" id="type-tmall" value="https://list.tmall.com/search_product.htm?q=" data-placeholder="天猫" /><label for="type-tmall"><span style="color:#dd2727">天猫</span></label></li> 
+         <li><input hidden="" type="radio" name="type" id="type-jd" value="https://search.jd.com/Search?keyword=" data-placeholder="京东" /><label for="type-jd"><span style="color:#c91623">京东</span></label></li> 
+         <li><input hidden="" type="radio" name="type" id="type-dangdang" value="http://search.dangdang.com/?key=" data-placeholder="当当" /><label for="type-dangdang"><span style="color:#ff3228">当当</span></label></li> 
+         <li><input hidden="" type="radio" name="type" id="type-meituan" value="http://cd.meituan.com/s/?w=" data-placeholder="美团" /><label for="type-meituan"><span style="color:#35b7a9">美团</span></label></li> 
+        </ul>
+       </div> 
+       <div class="search-group group-j">
+        <span class="type-text">工具</span>
+        <ul class="search-type">
+         <li><input hidden="" type="radio" name="type" id="type-pc6" value="http://s.pc6.com/?k=" data-placeholder="PC6软件下载站" /><label for="type-pc6"><span style="color:#262626">软件</span></label></li>
+         <li><input hidden="" type="radio" name="type" id="type-AAA" value="BBB" data-placeholder="BT下载" /><label for="type-AAA"><span style="color:#262626">BT下载</span></label></li>
+         <li><input hidden="" type="radio" name="type" id="type-ygyhg" value="https://so.ygyhg.com/s?keyword=" data-placeholder="网盘" /><label for="type-ygyhg"><span style="color:#262626">网盘</span></label></li>
+         <li><input hidden="" type="radio" name="type" id="type-kuaidi100" value="https://m.kuaidi100.com/result.jsp?nu=" data-placeholder="请输入快递单号" /><label for="type-kuaidi100"><span style="color:#262626">查快递</span></label></li>
+         <li><input hidden="" type="radio" name="type" id="type-baidumap" value="http://map.baidu.com/?newmap=1&amp;s=con%26wd%3D" data-placeholder="地图" /><label for="type-baidumap"><span style="color:#262626">百度地图</span></label></li>
+         <li><input hidden="" type="radio" name="type" id="type-translateA" value="https://translate.google.cn/#zh-CN/en/" data-placeholder="中 译 英（Google）" /><label for="type-translateA"><span style="color:#262626">中-&gt;英</span></label></li>
+         <li><input hidden="" type="radio" name="type" id="type-translateB" value="https://translate.google.cn/#en/zh-CN/" data-placeholder="英 译 中（Google）" /><label for="type-translateB"><span style="color:#262626">英-&gt;中</span></label></li>
+         <li><input hidden="" type="radio" name="type" id="type-translateC" value="https://translate.google.cn/#zh-CN/zh-TW/" data-placeholder="简体 转 繁体（Google）" /><label for="type-translateC"><span style="color:#262626">简-&gt;繁</span></label></li>
+         <li><input hidden="" type="radio" name="type" id="type-youdao" value="http://www.youdao.com/w/" data-placeholder="请输入要翻译的单词或文字" /><label for="type-youdao"><span style="color:#262626">有道</span></label></li>
+        </ul>
+       </div> 
+      </div> 
+      <form action="https://www.baidu.com/s?wd=" method="get" target="_blank" id="super-search-fm">
+       <input type="text" id="search-text" placeholder="百度一下" style="outline:none" autofocus="" />
+       <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+      <div class="set-check">
+       <input type="checkbox" id="set-search-blank" class="bubble-3" checked="" required="" />
+       <label for="set-search-blank" class="green">新窗口打开搜索结果</label>
+      </div>
+     </div> 
+     <script type="text/javascript">
+eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('!2(){2 g(){h(),i(),j(),k()}2 h(){d.9=s()}2 i(){z a=4.8(\'A[B="7"][5="\'+p()+\'"]\');a&&(a.9=!0,l(a))}2 j(){v(u())}2 k(){w(t())}2 l(a){P(z b=0;b<e.O;b++)e[b].I.1c("s-M");a.F.F.F.I.V("s-M")}2 m(a,b){E.H.S("L"+a,b)}2 n(a){6 E.H.Y("L"+a)}2 o(a){f=a.3,v(u()),w(a.3.5),m("7",a.3.5),c.K(),l(a.3)}2 p(){z b=n("7");6 b||a[0].5}2 q(a){m("J",a.3.9?1:-1),x(a.3.9)}2 r(a){6 a.11(),""==c.5?(c.K(),!1):(w(t()+c.5),x(s()),s()?E.U(b.G,+T X):13.Z=b.G,10 0)}2 s(){z a=n("J");6 a?1==a:!0}2 t(){6 4.8(\'A[B="7"]:9\').5}2 u(){6 4.8(\'A[B="7"]:9\').W("14-N")}2 v(a){c.1e("N",a)}2 w(a){b.G=a}2 x(a){a?b.3="1a":b.16("3")}z y,a=4.R(\'A[B="7"]\'),b=4.8("#18-C-19"),c=4.8("#C-12"),d=4.8("#17-C-15"),e=4.R(".C-1b"),f=a[0];P(g(),y=0;y<a.O;y++)a[y].D("Q",o);d.D("Q",q),b.D("1d",r)}();',62,77,'||function|target|document|value|return|type|querySelector|checked||||||||||||||||||||||||||var|input|name|search|addEventListener|window|parentNode|action|localStorage|classList|newWindow|focus|superSearch|current|placeholder|length|for|change|querySelectorAll|setItem|new|open|add|getAttribute|Date|getItem|href|void|preventDefault|text|location|data|blank|removeAttribute|set|super|fm|_blank|group|remove|submit|setAttribute'.split('|'),0,{}))
+</script> 
+     <!-- 雨滴系列 --> 
+     <link rel="shortcut icon" href="favcion.ico"> 
+     <link rel="stylesheet" href=" css/iconfont.css"> 
+     <link rel="stylesheet" href="../plug-in/normalize.css"> 
+     <link rel="stylesheet" href="css/style.css"> 
+     <link rel="stylesheet" type="text/css" href="css/style-min.css?0602"> 
+     <div class="box"> 
+      <a href="#" name="bbs"></a> 
+      <div class="sub-category"> 
+       <div>
+        <i class="iconfont icon-shequ"></i>雨滴系列
+       </div> 
+      </div> 
+      <div> 
+       <a target="_blank" href="http://bbs.wenruding.club/"> 
+        <div class="item"> 
+         <div class="logo">
+          <img src="img/csdn.ico" alt="CNDS"> 雨滴博客
+         </div> 
+         <div class="desc">
+          <!-- 描述文字，可删除 -->
+         </div> 
+        </div> </a> 
+       <a href="http://pan.wenruding.club"> 
+        <div class="item"> 
+         <div class="logo">
+          <img src="img/gold-favicon.png" alt="掘金"> 雨滴网盘
+         </div> 
+         <div class="desc"></div> 
+        </div> </a> 
+       <a target="_blank" href="http://movie.wenruding.club"> 
+        <div class="item"> 
+         <div class="logo">
+          <img src="img/github.ico" alt="github" > 雨滴影院
+         </div> 
+         <div class="desc"></div> 
+        </div> </a> 
+       <a target="_blank" href="http://mall.wenruding.club"> 
+        <div class="item"> 
+         <div class="logo">
+          <img src="img/stackoverflow.ico" alt="stackoverflow" > 雨滴商店
+         </div> 
+         <div class="desc"></div> 
+        </div> </a> 
+       <a target="_blank" href="https://segmentfault.com/"> 
+        <div class="item"> 
+         <div class="logo">
+          <img src="img/segmentfault.ico" alt="segmentfault"> segmentfault
+         </div> 
+         <div class="desc"></div> 
+        </div> </a> 
+       <a target="_blank" href="https://www.zhihu.com/"> 
+        <div class="item"> 
+         <div class="logo">
+          <img src="img/zhihu.ico" alt="知乎"> 知乎
+         </div> 
+         <div class="desc"></div> 
+        </div> </a> 
+       <a target="_blank" href="https://www.cnblogs.com/"> 
+        <div class="item"> 
+         <div class="logo">
+          <img src="img/cnblogs.ico" alt="博客园"/> 博客园
+         </div> 
+         <div class="desc"></div> 
+        </div> </a> 
+       <a target="_blank" href="https://www.oschina.net/"> 
+        <div class="item"> 
+         <div class="logo">
+          <img src="img/oschina.ico" alt="开源中国"> 开源中国
+         </div> 
+         <div class="desc"></div> 
+        </div> </a> 
+       <a target="_blank" href="https://www.v2ex.com/"> 
+        <div class="item"> 
+         <div class="logo">
+          <img src="img/v2ex.png" alt="V2EX"> V2EX
+         </div> 
+         <div class="desc"></div> 
+        </div> </a> 
+       <a target="_blank" href="https://coding.net/"> 
+        <div class="item"> 
+         <div class="logo">
+          <img src="img/coding.png" alt=" Coding"> Coding
+         </div> 
+         <div class="desc"></div> 
+        </div> </a> 
+      </div> 
+     </div> 
+     <!-- 教师工具 --> 
+     <div class="box"> 
+      <a href="#" name="sill"></a> 
+      <div class="sub-category"> 
+       <div>
+        <i class="iconfont icon-blogger"></i>教师工具
+       </div> 
+      </div> 
+      <div> 
+       <a target="_blank" href="http://www.jyeoo.com"> 
+        <div class="item"> 
+         <div class="logo">
+          <img src="img/alloyteam-favicon.jpg" alt="菁优网"> 菁优网
+         </div> 
+         <div class="desc"></div> 
+        </div> </a> 
+       <a target="_blank" href="http://www.zxxk.com"> 
+        <div class="item"> 
+         <div class="logo">
+          <img src="img/isux-favicon.jpg" alt="ISUX"> 学科网
+         </div> 
+         <div class="desc"></div> 
+        </div> </a> 
+       <a target="_blank" href="https://www.21cnjy.com/"> 
+        <div class="item"> 
+         <div class="logo"> 
+          <img src="img/fex-favicon.png"> 21世纪 
+         </div> 
+         <div class="desc"></div> 
+        </div> </a> 
+       <a target="_blank" href="http://wk.baidu.com/"> 
+        <div class="item"> 
+         <div class="logo"> 
+          <img src="img/fed-favicon.png"> 百度文库 
+         </div> 
+         <div class="desc"></div> 
+        </div> </a> 
+       <a target="_blank" href="https://www.5ykj.com/"> 
+        <div class="item"> 
+         <div class="logo"> 
+          <img src="img/aotu-favicon.png"> 莲山课件 
+         </div> 
+         <div class="desc"></div> 
+        </div> </a> 
+       <a target="_blank" href="http://ntce.neea.edu.cn/"> 
+        <div class="item"> 
+         <div class="logo"> 
+          <img src="img/75team-favicon.png"> 教资报考 
+         </div> 
+         <div class="desc"></div> 
+        </div> </a> 
+       <a target="_blank" href="http://efe.baidu.com/"> 
+        <div class="item"> 
+         <div class="logo"> 
+          <img src="img/efe-favicon.png"> EFE 
+         </div> 
+         <div class="desc"></div> 
+        </div> </a> 
+      </div> 
+     </div> 
+     <!-- 专业文库 --> 
+     <div class="box"> 
+      <a href="" name="docs"></a> 
+      <div class="sub-category"> 
+       <div>
+        <i class="iconfont icon-wendangdocument78"></i>专业文库
+       </div> 
+      </div> 
+      <div> 
+       <a target="_blank" href="http://jquery.cuishifeng.cn/index.html"> 
+        <div class="item"> 
+         <div class="logo">
+          <img src="img/jquery.png" alt="jQuery"> jQuery
+         </div> 
+         <div class="desc"></div> 
+        </div> </a> 
+       <a target="_blank" href="http://v3.bootcss.com/"> 
+        <div class="item"> 
+         <div class="logo">
+          <img src="img/bootstrap-favicon.png" alt="Bootstrap"> Bootstrap
+         </div> 
+         <div class="desc"></div> 
+        </div> </a> 
+       <a target="_blank" href="http://v3.bootcss.com/"> 
+        <div class="item"> 
+         <div class="logo">
+          <img src="img/vue-favicon.png" alt="Vue.js"> Vue.js
+         </div> 
+         <div class="desc"></div> 
+        </div> </a> 
+      </div> 
+     </div> 
+     <!-- 实用工具 --> 
+     <div class="box"> 
+      <a href="" name="tools"></a> 
+      <div class="sub-category"> 
+       <div>
+        <i class="iconfont icon-tool"></i>实用工具
+       </div> 
+      </div> 
+      <div> 
+       <a target="_blank" href="http://www.51job.com/"> 
+        <div class="item"> 
+         <div class="logo"> 
+          <img src="img/pinterest-favicon.png" />前程无忧
+         </div> 
+        </div> </a> 
+       <a target="_blank" href="http://bx.dataoke.com/"> 
+        <div class="item"> 
+         <div class="logo"> 
+          <img src="img/uigreat-favicon.jpg" />大淘客
+         </div> 
+        </div> </a> 
+       <a target="_blank" href="http://www.peise.net/tools/web/"> 
+        <div class="item"> 
+         <div class="logo"> 
+          <img src="img/huaban-favicon.png" />网页配色工具
+         </div> 
+        </div> </a> 
+       <a target="_blank" href="http://www.uupoop.com/"> 
+        <div class="item"> 
+         <div class="logo"> 
+          <img src="img/dribbble-favicon.png" />在线PS
+         </div> 
+        </div> </a> 
+       <a target="_blank" href="https://dummyimage.com/"> 
+        <div class="item"> 
+         <div class="logo"> 
+          <img src="img/behance-favicon.png" />动图生成
+         </div> 
+        </div> </a> 
+       <a target="_blank" href="https://cli.im/deqr"> 
+        <div class="item"> 
+         <div class="logo"> 
+          <img src="img/zcool-favicon.jpg" />二维码生成
+         </div> 
+        </div> </a> 
+       <a target="_blank" href="https://www.zybuluo.com/mdeditor"> 
+        <div class="item"> 
+         <div class="logo"> 
+          <img src="img/thefwa-favicon.png"> MD在线
+         </div> 
+        </div> </a> 
+      </div> 
+     </div> 
+</div> 
+    <footer class="footer"> 
+     <div class="copyright"> 
+      <div>
+       <a href="https://tongji.baidu.com/web/welcome/ico?s=e93d097b332d5e62dc380c941d8a9fb7"><img src="img/tongji.gif" />&middot;</a> Copyright &copy; 2018- 2019 
+       <a href="http://www.wenruding.club">雨滴时光科技</a>
+       <a href="http://www.beian.gov.cn">&middot; 粤ICP备18154459号</a> 
+      </div> 
+     </div> 
+    </footer> 
+   </section> 
+   <script src="js/jquery.js"></script> 
+   <script>
+        var oMenu = document.getElementById('menu');
+        var oLeftBar = document.getElementById('leftBar');
+        var menuFrom = document.getElementById('menu-form');
 
-  <div class="navbar-item navbar-item-notice" style="width: 100%">
-      <div class="notice-carousel">
-    <div class="notice-carousel-wrap">
-              <div class="notice-item">
-          <i class="czs-volume"></i>
-          <a class="notice-content" target="_blank" href="">
-            为了避免丢失，快捷键 Ctrl+D 收藏保存！          </a>
-          <a class="notice-link text-primary" target="_blank" href="">
-                      </a>
-        </div>
-              <div class="notice-item">
-          <i class="czs-volume"></i>
-          <a class="notice-content" target="_blank" href="">
-            以下网站排名不分先后~          </a>
-          <a class="notice-link text-primary" target="_blank" href="">
-                      </a>
-        </div>
-          </div>
-  </div>
-  </div>
+        oMenu.onclick = function() {
+            if (oLeftBar.offsetLeft == 0) {
+                oLeftBar.style.left = -249 + 'px';
+            }
+            else {
+                oLeftBar.style.left = 0;
+            }
+        }
 
-  <div class="navbar-end">
-    <div class="navbar-item navbar-item-end">
-      <div class="dropdown dropdown-hover dropdown-right">
-        <i class="icon czs-setting dropdown-toggle" style="margin-right: 10px;"></i>
-        <div class="dropdown-menu">
-          <a class="dropdown-item">
-            <label for="js-brief">卡片简化</label>
-            <input type="checkbox" id="js-brief" class="js-switch" />
-          </a>
-          <a class="dropdown-item">
-            <label for="js-dark">黑夜模式</label>
-            <input type="checkbox" id="js-dark" class="js-switch" />
-          </a>
-        </div>
-      </div>
-      <div class="dropdown dropdown-hover dropdown-right">
-        <i class="icon czs-weixin dropdown-toggle" style="margin-right: 10px;"></i>
-        <div class="dropdown-menu wechat-qrcode-menu">
-          <figure class="image wechat-qrcode">
-            <img src="https://alime-customer-upload-cn-hangzhou.oss-cn-hangzhou.aliyuncs.com/customer-upload/1617525534115_fgpp8ona9a29.png" alt="分享到微信">
-          </figure>
-        </div>
-      </div>
-          </div>
-  </div>
-</nav>
+        window.onresize = function() {
+            judgeWidth();
+        };
 
+        function judgeWidth() {
+            if (document.documentElement.clientWidth > 481) {
+                oLeftBar.style.left = 0;
+            } else {
+                oLeftBar.style.left = -249 + 'px';
+            }
+        }
+        var oNavItem = document.getElementById('navItem');
+        var aA = oNavItem.getElementsByTagName('a');
+        for (var i = 0; i < aA.length; i++) {
+            aA[i].onclick = function() {
+                for (var j = 0; j < aA.length; j++) {
+                    aA[j].className = '';
+                }
+                this.className = 'active';
+                if (oLeftBar.offsetLeft == 0) {
+                    if (document.documentElement.clientWidth <= 481) {
+                        oLeftBar.style.left = -249 + 'px';
+                        menuFrom.checked = false;
 
-<div class="content">
-  <div class="row">
-        <div class="col-12">
-      <div class="index-notice">
-          <div class="notice-carousel">
-    <div class="notice-carousel-wrap">
-              <div class="notice-item">
-          <i class="czs-volume"></i>
-          <a class="notice-content" target="_blank" href="">
-            为了避免丢失，快捷键 Ctrl+D 收藏保存！          </a>
-          <a class="notice-link text-primary" target="_blank" href="">
-                      </a>
-        </div>
-              <div class="notice-item">
-          <i class="czs-volume"></i>
-          <a class="notice-content" target="_blank" href="">
-            以下网站排名不分先后~          </a>
-          <a class="notice-link text-primary" target="_blank" href="">
-                      </a>
-        </div>
-          </div>
-  </div>
-      </div>
-    </div>
+                    }
+                }
+            }
+        }
 
-    
-  <div class="col-12">
-    <div class="section-title "
-         id="3">
-      <i class="icon czs-thumbs-up"></i>
-      优质站点    </div>
+        $(window).scroll(function() {
+            if($(window).scrollTop() >= 200){
+                $('#fixedBar').fadeIn(300);
+            }else{
+                $('#fixedBar').fadeOut(300);
+            }
+        });
+        $('#fixedBar').click(function() {
+            $('html,body').animate({scrollTop:'0px'},800);
+        })
+        </script> 
+<!--百度统计--> 
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?e93d097b332d5e62dc380c941d8a9fb7";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script> 
+<!--百度链接提交--> 
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>  
   </div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="10"
-     data-tooltip="播放速度较快，部分需要登录后观看"
-     href="https://www.nfmovies.com/" style="z-index: 99999;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://p99.pstatp.com/origin/pgc-image/ad3cf2ce160e46059ef1161ec85efe9d" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          奈非影视        </div>
-        <div class="card-desc">
-          播放速度较快，部分需要登录后观看        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        484159          </span>
-                    <span class="card-love " data-pid="10">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            9277            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="18"
-     data-tooltip="资源丰富，部分需要手机端观看"
-     href="https://www.yst3.com/" style="z-index: 99998;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://sf1-dycdn-tos.pstatp.com/obj/ies-music/storm_feedback_e8e987f0e881d3630a46d8d97f8f645d" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          万影网        </div>
-        <div class="card-desc">
-          资源丰富，部分需要手机端观看        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        462439          </span>
-                    <span class="card-love " data-pid="18">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            6250            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="20"
-     data-tooltip="资源丰富，大部分视频播放速度快"
-     href="https://www.tv5box.com/" style="z-index: 99997;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://sf1-dycdn-tos.pstatp.com/obj/ies-music/storm_feedback_171a0334a0d843aa4a323dd8fd4e8f69" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          电影盒子        </div>
-        <div class="card-desc">
-          资源丰富，大部分视频播放速度快        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        232039          </span>
-                    <span class="card-love " data-pid="20">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            2740            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="35"
-     data-tooltip="资源丰富，播放速度快"
-     href="https://bde4.cc/" style="z-index: 99996;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://sf1-dycdn-tos.pstatp.com/obj/ies-music/storm_feedback_ee28f7ef312c799a58ab4bcdf0c60db4" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          哔嘀影视        </div>
-        <div class="card-desc">
-          资源丰富，播放速度快        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        129999          </span>
-                    <span class="card-love " data-pid="35">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            20732            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="37"
-     data-tooltip="番剧内容丰富，播放速度快"
-     href="https://www.agefans.net/" style="z-index: 99995;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://sf1-dycdn-tos.pstatp.com/obj/ies-music/storm_feedback_2c0e077fd82e40cf141ba36a801cf996" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          AGE动漫        </div>
-        <div class="card-desc">
-          番剧内容丰富，播放速度快        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        78055          </span>
-                    <span class="card-love " data-pid="37">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            687            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="42"
-     data-tooltip="资源丰富，部分视频播放速度快"
-     href="http://www.kuaikan66.com/" style="z-index: 99994;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://sf1-dycdn-tos.pstatp.com/obj/ies-music/storm_feedback_898fed99d95eee4f0e2289e0b31cb43b" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          快看影视        </div>
-        <div class="card-desc">
-          资源丰富，部分视频播放速度快        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        95248          </span>
-                    <span class="card-love " data-pid="42">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            1002            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="87"
-     data-tooltip="人人影视网页版，播放速度快"
-     href="http://m.rr.tv/" style="z-index: 99993;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://sf1-dycdn-tos.pstatp.com/obj/ies-music/storm_feedback_399930554ceda3bf38b8707c536b0f38" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          人人影视        </div>
-        <div class="card-desc">
-          人人影视网页版，播放速度快        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        61466          </span>
-                    <span class="card-love " data-pid="87">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            449            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="130"
-     data-tooltip="热门影视剧的清晰度和速度都不错"
-     href="https://cokemv.cn/" style="z-index: 99992;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://sf1-dycdn-tos.pstatp.com/obj/ies-music/storm_feedback_b3393ad115b7dbb1d6809700fe4fe78b" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          COKEMV影视        </div>
-        <div class="card-desc">
-          热门影视剧的清晰度和速度都不错        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        8557          </span>
-                    <span class="card-love " data-pid="130">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            30            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-  
-  <div class="col-12">
-    <div class="section-title "
-         id="2">
-      <i class="icon czs-vimeo"></i>
-      在线影视站    </div>
-  </div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="1"
-     data-tooltip="资源不多,播放速度快"
-     href="https://www.subaibai.com/" style="z-index: 99999;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://sf1-dycdn-tos.pstatp.com/obj/ies-music/storm_feedback_d361ef9690000960fc82dce7a6a0a2c7" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          素白白影视        </div>
-        <div class="card-desc">
-          资源不多,播放速度快        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        71518          </span>
-                    <span class="card-love " data-pid="1">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            1218            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="46"
-     data-tooltip="资源丰富，部分视频播放速度快"
-     href="http://1090ys2.com/" style="z-index: 99998;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://ae01.alicdn.com/kf/Ha034750753a044269ea68f51e68925e3u.png" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          1090影视        </div>
-        <div class="card-desc">
-          资源丰富，部分视频播放速度快        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        81644          </span>
-                    <span class="card-love " data-pid="46">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            1119            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="50"
-     data-tooltip="只有美剧，视频有广告"
-     href="http://www.meijuxia.net/" style="z-index: 99997;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://p.pstatp.com/origin/ff6c00031edf0a161bfa" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          美剧虾        </div>
-        <div class="card-desc">
-          只有美剧，视频有广告        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        15641          </span>
-                    <span class="card-love " data-pid="50">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            292            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="66"
-     data-tooltip="播放速度快，只做热门影视"
-     href="https://www.zxzj.me/" style="z-index: 99996;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://sf1-dycdn-tos.pstatp.com/obj/ies-music/storm_feedback_add7ca30ba7927419b51582ad26f9230" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          在线之家        </div>
-        <div class="card-desc">
-          播放速度快，只做热门影视        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        31258          </span>
-                    <span class="card-love " data-pid="66">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            99            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="68"
-     data-tooltip="简约风格，只做热门影视"
-     href="https://ddrk.me/" style="z-index: 99995;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://sf1-dycdn-tos.pstatp.com/obj/ies-music/storm_feedback_9e37b52986df990a5b3f20790efb7506" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          低端影视        </div>
-        <div class="card-desc">
-          简约风格，只做热门影视        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        18882          </span>
-                    <span class="card-love " data-pid="68">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            95            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="70"
-     data-tooltip="只做热门影视，播放速度快"
-     href="https://www.novipnoad.com/" style="z-index: 99994;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://sf1-dycdn-tos.pstatp.com/obj/ies-music/storm_feedback_625d3cd698cb687c761860f44fd6c8c9" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          NO视频        </div>
-        <div class="card-desc">
-          只做热门影视，播放速度快        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        14885          </span>
-                    <span class="card-love " data-pid="70">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            54            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="73"
-     data-tooltip="播放速度快，有广告"
-     href="http://www.8hdyy.com/" style="z-index: 99993;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://sf1-dycdn-tos.pstatp.com/obj/ies-music/storm_feedback_cbaf74af346ee0a159e3f0a516dae345" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          8号影院        </div>
-        <div class="card-desc">
-          播放速度快，有广告        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        24451          </span>
-                    <span class="card-love " data-pid="73">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            134            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="75"
-     data-tooltip="美剧齐全，速度快，清晰度差"
-     href="https://www.meiju11.com/" style="z-index: 99992;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://sf1-dycdn-tos.pstatp.com/obj/ies-music/storm_feedback_284c0b11bef8b26b70e7bf53e1ee5200" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          爱美剧        </div>
-        <div class="card-desc">
-          美剧齐全，速度快，清晰度差        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        8466          </span>
-                    <span class="card-love " data-pid="75">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            37            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="77"
-     data-tooltip="美剧丰富,播放速度快"
-     href="http://www.meijuxia.com/" style="z-index: 99991;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://sf1-dycdn-tos.pstatp.com/obj/ies-music/storm_feedback_ac06ed8ecbbfa67427ecd7f990d530d3" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          美剧侠        </div>
-        <div class="card-desc">
-          美剧丰富,播放速度快        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        5782          </span>
-                    <span class="card-love " data-pid="77">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            31            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="80"
-     data-tooltip="速度较快，资源丰富，广告也丰富"
-     href="https://www.ai66.cc/" style="z-index: 99990;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://sf1-dycdn-tos.pstatp.com/obj/ies-music/storm_feedback_357f6eea19ee1e86c257cecc77e52a25" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          新版6v电影        </div>
-        <div class="card-desc">
-          速度较快，资源丰富，广告也丰富        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        13402          </span>
-                    <span class="card-love " data-pid="80">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            49            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="82"
-     data-tooltip="视频皆有广告，介意慎入"
-     href="http://www.kkkkwu.com/" style="z-index: 99989;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://sf1-dycdn-tos.pstatp.com/obj/ies-music/storm_feedback_a82ac2129cc7c9d78fca275a2f33ec95" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          4K屋        </div>
-        <div class="card-desc">
-          视频皆有广告，介意慎入        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        10554          </span>
-                    <span class="card-love " data-pid="82">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            41            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="84"
-     data-tooltip="资源丰富，部分视频播放速度快"
-     href="https://www.hktvyb.com/" style="z-index: 99988;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://sf1-dycdn-tos.pstatp.com/obj/ies-music/storm_feedback_8d0baf647a1cbbc3e3bd9522145fbea1" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          TVB云播        </div>
-        <div class="card-desc">
-          资源丰富，部分视频播放速度快        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        13321          </span>
-                    <span class="card-love " data-pid="84">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            50            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="89"
-     data-tooltip="番剧更新快，部分播放速度快"
-     href="http://www.yhdm.io/" style="z-index: 99987;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://sf1-dycdn-tos.pstatp.com/obj/ies-music/storm_feedback_05175ff21d3cfd1bcd36e103a8451344" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          樱花动漫        </div>
-        <div class="card-desc">
-          番剧更新快，部分播放速度快        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        20148          </span>
-                    <span class="card-love " data-pid="89">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            113            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="91"
-     data-tooltip="番剧更新快，播放速度快"
-     href="https://www.qiqidongman.com/" style="z-index: 99986;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://ae01.alicdn.com/kf/Ha1f9980880f34d488e93ef8d87bd01f6O.png" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          奇奇动漫        </div>
-        <div class="card-desc">
-          番剧更新快，播放速度快        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        9725          </span>
-                    <span class="card-love " data-pid="91">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            47            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="93"
-     data-tooltip="高清在线，清晰度高，资源少"
-     href="https://www.bwl87.com/" style="z-index: 99985;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://sf1-dycdn-tos.pstatp.com/obj/ies-music/storm_feedback_19a15b243bbe3bd42f1fbbe22f3f3b55" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          阿房影视        </div>
-        <div class="card-desc">
-          高清在线，清晰度高，资源少        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        14950          </span>
-                    <span class="card-love " data-pid="93">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            57            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="95"
-     data-tooltip="泰剧为主，视频有广告"
-     href="https://www.97taiju.com/" style="z-index: 99984;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://sf1-dycdn-tos.pstatp.com/obj/ies-music/storm_feedback_b575f381e4b6e7052d8cf66a04271f7b" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          97泰剧网        </div>
-        <div class="card-desc">
-          泰剧为主，视频有广告        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        3280          </span>
-                    <span class="card-love " data-pid="95">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            19            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="97"
-     data-tooltip="泰剧为主，视频有广告"
-     href="https://www.taijumi.cc/" style="z-index: 99983;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://sf1-dycdn-tos.pstatp.com/obj/ies-music/storm_feedback_cf7f5aeb7a697019a896dfa907eec910" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          泰剧迷        </div>
-        <div class="card-desc">
-          泰剧为主，视频有广告        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        2200          </span>
-                    <span class="card-love " data-pid="97">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            18            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="110"
-     data-tooltip="播放速度比较快，视频资源丰富"
-     href="http://www.btzj.cc/" style="z-index: 99982;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://p99.pstatp.com/origin/pgc-image/36a79b69aba44411b21d56502da447f0" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          九九电影网        </div>
-        <div class="card-desc">
-          播放速度比较快，视频资源丰富        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        13728          </span>
-                    <span class="card-love " data-pid="110">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            75            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="112"
-     data-tooltip="资源丰富，部分内容整理用心"
-     href="https://www.k1080.net/" style="z-index: 99981;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://sf1-dycdn-tos.pstatp.com/obj/ies-music/storm_feedback_f583520000db5a0358ea84caebaa09dc" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          1080影视        </div>
-        <div class="card-desc">
-          资源丰富，部分内容整理用心        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        19716          </span>
-                    <span class="card-love " data-pid="112">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            73            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="114"
-     data-tooltip="电影、电视剧更新及时，播放速度快"
-     href="https://www.zhenbuka.com/" style="z-index: 99980;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://sf1-dycdn-tos.pstatp.com/obj/ies-music/storm_feedback_25968759bb8ee718e9674d10cbd47675" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          真不卡影院        </div>
-        <div class="card-desc">
-          电影、电视剧更新及时，播放速度快        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        569304          </span>
-                    <span class="card-love " data-pid="114">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            19731            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="116"
-     data-tooltip="清晰度高，播放速度快"
-     href="http://www.9ekk.com/" style="z-index: 99979;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://sf1-dycdn-tos.pstatp.com/obj/ies-music/storm_feedback_e7ef3b862e801052ae6e2f1e3e9280a9" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          9亿看看        </div>
-        <div class="card-desc">
-          清晰度高，播放速度快        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        10365          </span>
-                    <span class="card-love " data-pid="116">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            36            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="118"
-     data-tooltip="只做粤语的电影和电视剧,视频有广告"
-     href="http://www.yuesp.com/" style="z-index: 99978;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://p99.pstatp.com/origin/pgc-image/e1e2f92098274f4aaeb143469d4a2771" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          粤视频        </div>
-        <div class="card-desc">
-          只做粤语的电影和电视剧,视频有广告        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        2546          </span>
-                    <span class="card-love " data-pid="118">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            11            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="120"
-     data-tooltip="清晰度高,播放速度快"
-     href="https://www.wuguiyy.com/" style="z-index: 99977;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://sf1-dycdn-tos.pstatp.com/obj/ies-music/storm_feedback_dd1f1faac707dd7fe89cb35a66433664" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          乌龟影院        </div>
-        <div class="card-desc">
-          清晰度高,播放速度快        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        9595          </span>
-                    <span class="card-love " data-pid="120">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            20            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="122"
-     data-tooltip="清晰度高,播放速度快"
-     href="https://www.juztv.com/" style="z-index: 99976;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://sf1-dycdn-tos.pstatp.com/obj/ies-music/storm_feedback_60bd6ca3c2a59ee3328af0081c823f46" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          桔子TV        </div>
-        <div class="card-desc">
-          清晰度高,播放速度快        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        14034          </span>
-                    <span class="card-love " data-pid="122">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            38            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="124"
-     data-tooltip="高清晰度极速播放，播放偶尔不稳定"
-     href="https://www.muguangys.com/" style="z-index: 99975;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://sf1-dycdn-tos.pstatp.com/obj/ies-music/storm_feedback_f137acdcb8ccb04e277762b1b73f1a02" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          暮光影视        </div>
-        <div class="card-desc">
-          高清晰度极速播放，播放偶尔不稳定        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        5802          </span>
-                    <span class="card-love " data-pid="124">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            18            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="126"
-     data-tooltip="速度挺快，支持弹幕"
-     href="http://www.zzzfun.com/" style="z-index: 99974;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://sf1-dycdn-tos.pstatp.com/obj/ies-music/storm_feedback_4f148ab26b8fbab9849b95f57f8edb70" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          ZzzFun动漫        </div>
-        <div class="card-desc">
-          速度挺快，支持弹幕        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        6836          </span>
-                    <span class="card-love " data-pid="126">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            47            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="128"
-     data-tooltip="部分资源不错，支持弹幕"
-     href="https://www.5dm.tv/" style="z-index: 99973;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://sf1-dycdn-tos.pstatp.com/obj/ies-music/storm_feedback_acdceba8304fee2dd3b8b3f6347915e1" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          五弹幕        </div>
-        <div class="card-desc">
-          部分资源不错，支持弹幕        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        3600          </span>
-                    <span class="card-love " data-pid="128">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            8            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="132"
-     data-tooltip="热门及新剧基本上都可以高清极速观看"
-     href="https://www.vipyy666.com/" style="z-index: 99972;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://sf1-dycdn-tos.pstatp.com/obj/ies-music/storm_feedback_5206e5a7952e136c43219ff9febac181" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          VIP影院        </div>
-        <div class="card-desc">
-          热门及新剧基本上都可以高清极速观看        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        18612          </span>
-                    <span class="card-love " data-pid="132">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            109            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="134"
-     data-tooltip="比较精致的一个站，部分视频高清极速播放"
-     href="https://www.magedn.com/" style="z-index: 99971;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://sf1-dycdn-tos.pstatp.com/obj/ies-music/storm_feedback_6a571f5bf4e752d6ac8f9bbf73856f50" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          MaGeDN        </div>
-        <div class="card-desc">
-          比较精致的一个站，部分视频高清极速播放        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        4307          </span>
-                    <span class="card-love " data-pid="134">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            18            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="136"
-     data-tooltip="提供部分经典老片和热门新片播放"
-     href="https://www.bttwo.com/" style="z-index: 99970;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://sf1-dycdn-tos.pstatp.com/obj/ies-music/storm_feedback_4b8d862080b5038da4247290c78cb1ff" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          两个BT        </div>
-        <div class="card-desc">
-          提供部分经典老片和热门新片播放        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        4986          </span>
-                    <span class="card-love " data-pid="136">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            17            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="138"
-     data-tooltip="只做动漫，大部分播放速度快"
-     href="http://www.dmdm2020.com/" style="z-index: 99969;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://p99.pstatp.com/origin/pgc-image/3808f795a30b434b9cfa18739be90e6a" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          哆咪动漫网        </div>
-        <div class="card-desc">
-          只做动漫，大部分播放速度快        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        5956          </span>
-                    <span class="card-love " data-pid="138">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            19            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="140"
-     data-tooltip="资源丰富，部分视频播放速度快"
-     href="http://www.liunianys.cn/" style="z-index: 99968;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://p99.pstatp.com/origin/pgc-image/291d967953fd4ceeb7bc546722d6631d" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          流光影视网        </div>
-        <div class="card-desc">
-          资源丰富，部分视频播放速度快        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        4926          </span>
-                    <span class="card-love " data-pid="140">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            17            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="144"
-     data-tooltip="简约风格，播放速度快"
-     href="http://www.yc2050.com/" style="z-index: 99967;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://sf1-dycdn-tos.pstatp.com/obj/ies-music/storm_feedback_e0c93d5ea259b566a64d721fb0e9aae5" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          爱爱客电影网        </div>
-        <div class="card-desc">
-          简约风格，播放速度快        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        5642          </span>
-                    <span class="card-love " data-pid="144">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            28            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="146"
-     data-tooltip="简约又好看，只做热门影视，播放速度快"
-     href="https://tv.syrme.top/" style="z-index: 99966;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://p99.pstatp.com/origin/pgc-image/25c755e257da42c49156a82aa37859e2" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          简影        </div>
-        <div class="card-desc">
-          简约又好看，只做热门影视，播放速度快        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        5646          </span>
-                    <span class="card-love " data-pid="146">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            10            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="257"
-     data-tooltip="资源丰富，部分需要手机端观看"
-     href="https://www.huiy3.com/" style="z-index: 99965;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://sf1-dycdn-tos.pstatp.com/obj/ies-music/storm_feedback_3ac17bce385a70681e70b5b6b7ddf5f9" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          汇影网        </div>
-        <div class="card-desc">
-          资源丰富，部分需要手机端观看        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        3318          </span>
-                    <span class="card-love " data-pid="257">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            9            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="263"
-     data-tooltip="资源丰富，播放速度快"
-     href="http://www.dandanzan.cc/" style="z-index: 99964;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://sf1-cdn-tos.douyinstatic.com/obj/ies-music/storm_feedback_e776de3633c0c7ef9f0cfaccb672c852" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          蛋蛋赞影院        </div>
-        <div class="card-desc">
-          资源丰富，播放速度快        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        489          </span>
-                    <span class="card-love " data-pid="263">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            0            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-  
-  <div class="col-12">
-    <div class="section-title "
-         id="1">
-      <i class="icon czs-download-l"></i>
-      影视下载站    </div>
-  </div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="99"
-     data-tooltip="老牌下载站"
-     href="https://www.ygdy8.com/" style="z-index: 99999;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://p99.pstatp.com/origin/pgc-image/d37597053786439ea03b2c99a973bf07" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          阳光电影        </div>
-        <div class="card-desc">
-          老牌下载站        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        7912          </span>
-                    <span class="card-love " data-pid="99">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            63            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="101"
-     data-tooltip="资源丰富，1080P和4K资源为主"
-     href="http://pianyuan.la/" style="z-index: 99998;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://ae01.alicdn.com/kf/Ha1f9980880f34d488e93ef8d87bd01f6O.png" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          片源网        </div>
-        <div class="card-desc">
-          资源丰富，1080P和4K资源为主        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        13007          </span>
-                    <span class="card-love " data-pid="101">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            104            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="103"
-     data-tooltip="老牌下载站，资源丰富"
-     href="https://dytt8.net/" style="z-index: 99997;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://sf1-dycdn-tos.pstatp.com/obj/ies-music/storm_feedback_5706600dc194fe976a20a3e66c74ed38" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          电影天堂        </div>
-        <div class="card-desc">
-          老牌下载站，资源丰富        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        10002          </span>
-                    <span class="card-love " data-pid="103">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            91            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="105"
-     data-tooltip="老牌下载站，资源丰富，广告也丰富"
-     href="http://www.hao6v.com/" style="z-index: 99996;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://sf1-dycdn-tos.pstatp.com/obj/ies-music/storm_feedback_7c13603f74ec84b18732936e77b8f2ff" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          6V电影        </div>
-        <div class="card-desc">
-          老牌下载站，资源丰富，广告也丰富        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        5797          </span>
-                    <span class="card-love " data-pid="105">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            48            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="107"
-     data-tooltip="老牌电影下载站，跟电影天堂同时代"
-     href="https://www.piaohua.com/" style="z-index: 99995;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://sf1-dycdn-tos.pstatp.com/obj/ies-music/storm_feedback_cbb2040fc6612a209203ce7b9778a98b" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          飘花电影网        </div>
-        <div class="card-desc">
-          老牌电影下载站，跟电影天堂同时代        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        4744          </span>
-                    <span class="card-love " data-pid="107">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            14            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="148"
-     data-tooltip="1080P/4K高清片源下载"
-     href="https://gaoqing.fm/" style="z-index: 99994;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://sf1-dycdn-tos.pstatp.com/obj/ies-music/storm_feedback_18d0f15f28566707929691dd7f8a90d0" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          高清电台        </div>
-        <div class="card-desc">
-          1080P/4K高清片源下载        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        5495          </span>
-                    <span class="card-love " data-pid="148">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            24            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="150"
-     data-tooltip="所有资源都是百度网盘或115网盘下载，片源质量不错"
-     href="http://n7f6.cn/" style="z-index: 99993;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://ae01.alicdn.com/kf/He8602e7e1b584ace889099c74c4e669b1.jpg" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          神鸡电影        </div>
-        <div class="card-desc">
-          所有资源都是百度网盘或115网盘下载，片源质量不错        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        4751          </span>
-                    <span class="card-love " data-pid="150">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            23            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="152"
-     data-tooltip="应该是日剧最全的资源站，但下载需要积分"
-     href="http://www.doki8.com/" style="z-index: 99992;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://sf1-dycdn-tos.pstatp.com/obj/ies-music/storm_feedback_e716f1a4b7990b8ce7ee49df4ecc166a" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          心动日剧        </div>
-        <div class="card-desc">
-          应该是日剧最全的资源站，但下载需要积分        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        1926          </span>
-                    <span class="card-love " data-pid="152">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            7            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="154"
-     data-tooltip="美剧下载第一站，广告丰富"
-     href="https://www.meijutt.tv/" style="z-index: 99991;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://sf1-dycdn-tos.pstatp.com/obj/ies-music/storm_feedback_3e6920d545f4ed1dc100dcbffbc9d6f8" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          美剧天堂        </div>
-        <div class="card-desc">
-          美剧下载第一站，广告丰富        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        1927          </span>
-                    <span class="card-love " data-pid="154">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            6            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="156"
-     data-tooltip="高清压制，无广告"
-     href="https://www.chaospace.fun/" style="z-index: 99990;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://sf1-dycdn-tos.pstatp.com/obj/ies-music/storm_feedback_5ba893fff6a3fcf5b95a8a8ca276a312" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          CHAOSPACE        </div>
-        <div class="card-desc">
-          高清压制，无广告        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        3024          </span>
-                    <span class="card-love " data-pid="156">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            6            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="158"
-     data-tooltip="有很多独家压制的精品剧，有水印无广告"
-     href="https://www.uump4.net/" style="z-index: 99989;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://sf1-dycdn-tos.pstatp.com/obj/ies-music/storm_feedback_863fe8da4a407a863fb09a1368ed06f2" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          悠悠MP4        </div>
-        <div class="card-desc">
-          有很多独家压制的精品剧，有水印无广告        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        3080          </span>
-                    <span class="card-love " data-pid="158">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            8            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="160"
-     data-tooltip="资源整理的不错，影视剧下载不错"
-     href="https://www.xiazai001.com/" style="z-index: 99988;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://sf1-dycdn-tos.pstatp.com/obj/ies-music/storm_feedback_0caf7840a5cb0d459fe0e37966ce92a7" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          下载001论坛        </div>
-        <div class="card-desc">
-          资源整理的不错，影视剧下载不错        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        1892          </span>
-                    <span class="card-love " data-pid="160">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            7            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="162"
-     data-tooltip="韩剧下载，提供BT和百度云两种方式"
-     href="https://www.hanfan.cc/" style="z-index: 99987;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://sf1-dycdn-tos.pstatp.com/obj/ies-music/storm_feedback_bafc4b34ed229a375c456b41a271db07" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          韩饭网        </div>
-        <div class="card-desc">
-          韩剧下载，提供BT和百度云两种方式        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        1972          </span>
-                    <span class="card-love " data-pid="162">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            12            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="164"
-     data-tooltip="纪录片下载网站，提供百度云和迅雷下载"
-     href="http://www.daofire.com/" style="z-index: 99986;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://sf1-dycdn-tos.pstatp.com/obj/ies-music/storm_feedback_8c53a581fa542fdf4b93f5f40442f584" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          盗火线        </div>
-        <div class="card-desc">
-          纪录片下载网站，提供百度云和迅雷下载        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        1304          </span>
-                    <span class="card-love " data-pid="164">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            2            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="166"
-     data-tooltip="专业动漫下载网站"
-     href="https://acg.rip/" style="z-index: 99985;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://sf1-dycdn-tos.pstatp.com/obj/ies-music/storm_feedback_72c985dcb830b52c67edf26e491d7dd7" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          ACG.RIP        </div>
-        <div class="card-desc">
-          专业动漫下载网站        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        3661          </span>
-                    <span class="card-love " data-pid="166">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            20            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="168"
-     data-tooltip="有挺多比较老的资源可以下载，需登录"
-     href="https://www.aixiaoju.com/" style="z-index: 99984;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://sf1-dycdn-tos.pstatp.com/obj/ies-music/storm_feedback_f4114fd26074e470c3d758dbe2be7b09" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          爱笑聚        </div>
-        <div class="card-desc">
-          有挺多比较老的资源可以下载，需登录        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        1158          </span>
-                    <span class="card-love " data-pid="168">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            9            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="170"
-     data-tooltip="老牌BT下载站,资源更新快,无需登录"
-     href="http://www.33btjia.com/" style="z-index: 99983;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://sf1-dycdn-tos.pstatp.com/obj/ies-music/storm_feedback_da2aed5e51b068e210ea48cb8a5949d0" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          BT之家        </div>
-        <div class="card-desc">
-          老牌BT下载站,资源更新快,无需登录        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        4965          </span>
-                    <span class="card-love " data-pid="170">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            16            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="172"
-     data-tooltip="超前点播和热门视频百度网盘下载，部分有水印"
-     href="https://shimo.im/docs/Xm4kMLgoE6KIrqDW/read" style="z-index: 99982;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://p99.pstatp.com/origin/pgc-image/438ed0c1828e469096eea8e8c0a59cba" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          影视小熊        </div>
-        <div class="card-desc">
-          超前点播和热门视频百度网盘下载，部分有水印        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        2191          </span>
-                    <span class="card-love " data-pid="172">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            5            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="187"
-     data-tooltip="纪录片资源比较全,贵在下载无门槛"
-     href="http://www.jlpcn.net/" style="z-index: 99981;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://p99.pstatp.com/origin/pgc-image/b4a7e26a98664c23acb881b78b212c03" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          纪录片天地        </div>
-        <div class="card-desc">
-          纪录片资源比较全,贵在下载无门槛        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        1565          </span>
-                    <span class="card-love " data-pid="187">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            6            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="226"
-     data-tooltip="提供热门视频百度网盘下载"
-     href="http://520.sumsu.cn/forum.php" style="z-index: 99980;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://sf1-dycdn-tos.pstatp.com/obj/ies-music/storm_feedback_3e75eead3fbd7ca082c81366b416be32" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          雷锋菌        </div>
-        <div class="card-desc">
-          提供热门视频百度网盘下载        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        1493          </span>
-                    <span class="card-love " data-pid="226">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            1            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-  
-  <div class="col-12">
-    <div class="section-title "
-         id="5">
-      <i class="icon czs-code-fork"></i>
-      磁力搜索站    </div>
-  </div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="175"
-     data-tooltip="磁力搜索下载站，简单好用，广告可屏蔽"
-     href="https://cili-xingqiu.com/" style="z-index: 99999;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://sf1-dycdn-tos.pstatp.com/obj/ies-music/storm_feedback_49316157a3e8dcf158384f297f81fb66" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          磁力星球        </div>
-        <div class="card-desc">
-          磁力搜索下载站，简单好用，广告可屏蔽        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        11113          </span>
-                    <span class="card-love " data-pid="175">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            48            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="177"
-     data-tooltip="以人人影视的资源为主，美剧资源较多"
-     href="http://oabt008.com/home.html" style="z-index: 99998;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://sf1-dycdn-tos.pstatp.com/obj/ies-music/storm_feedback_c31eb069d74007bb778d5619e77b9901" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          人人磁力站        </div>
-        <div class="card-desc">
-          以人人影视的资源为主，美剧资源较多        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        6294          </span>
-                    <span class="card-love " data-pid="177">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            68            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="179"
-     data-tooltip="资源丰富，未对资源进行过滤"
-     href="https://www.yhg15.xyz/" style="z-index: 99997;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://sf1-dycdn-tos.pstatp.com/obj/ies-music/storm_feedback_da299584c92a579944c580398a4af882" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          雨花阁        </div>
-        <div class="card-desc">
-          资源丰富，未对资源进行过滤        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        12136          </span>
-                    <span class="card-love " data-pid="179">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            126            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="181"
-     data-tooltip="无水印,无中文,无限制"
-     href="https://rarbg.to/" style="z-index: 99996;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://sf1-dycdn-tos.pstatp.com/obj/ies-music/storm_feedback_a96ad68bedf37ac82bc519f546d405aa" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          RARBG        </div>
-        <div class="card-desc">
-          无水印,无中文,无限制        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        6387          </span>
-                    <span class="card-love " data-pid="181">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            68            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="183"
-     data-tooltip="各种海外影视剧下载，种子总数高达480W"
-     href="https://zooqle.com/" style="z-index: 99995;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://sf1-dycdn-tos.pstatp.com/obj/ies-music/storm_feedback_271784ac70a90edd50a3264527144d66" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          Zooqle        </div>
-        <div class="card-desc">
-          各种海外影视剧下载，种子总数高达480W        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        5181          </span>
-                    <span class="card-love " data-pid="183">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            25            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="185"
-     data-tooltip="号称全球最大的BT站,因为老被封所以上发布页"
-     href="https://piratebayproxy.info/" style="z-index: 99994;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://sf1-dycdn-tos.pstatp.com/obj/ies-music/storm_feedback_158b62de6df3429ea84dfb5fad4b5e6b" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          海盗湾发布站        </div>
-        <div class="card-desc">
-          号称全球最大的BT站,因为老被封所以上发布页        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        6936          </span>
-                    <span class="card-love " data-pid="185">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            26            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-  
-  <div class="col-12">
-    <div class="section-title "
-         id="6">
-      <i class="icon czs-cloud"></i>
-      云盘搜索站    </div>
-  </div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="189"
-     data-tooltip="老牌云盘搜索，资源丰富,失效的也比较多"
-     href="http://www.pansou.com/" style="z-index: 99999;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://sf1-dycdn-tos.pstatp.com/obj/ies-music/storm_feedback_2b0c2a5dd4f5ca88e5b288964cae46c4" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          盘搜        </div>
-        <div class="card-desc">
-          老牌云盘搜索，资源丰富,失效的也比较多        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        5636          </span>
-                    <span class="card-love " data-pid="189">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            22            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="191"
-     data-tooltip="资源丰富,排版舒服，推荐使用"
-     href="https://www.dalipan.com/" style="z-index: 99998;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://p99.pstatp.com/origin/pgc-image/486a2ae11e4b432196a229f564b45fac" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          大力盘搜索        </div>
-        <div class="card-desc">
-          资源丰富,排版舒服，推荐使用        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        5037          </span>
-                    <span class="card-love " data-pid="191">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            42            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="193"
-     data-tooltip="很好用的一个百度云盘搜索网站"
-     href="http://www.kengso.com/" style="z-index: 99997;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://sf1-dycdn-tos.pstatp.com/obj/ies-music/storm_feedback_482d677325ebc55a218ac1f250172eaf" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          坑搜网        </div>
-        <div class="card-desc">
-          很好用的一个百度云盘搜索网站        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        3253          </span>
-                    <span class="card-love " data-pid="193">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            49            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="195"
-     data-tooltip="挺不错的网盘搜索网站，跟坑搜应该是一家"
-     href="http://www.repanso.com/" style="z-index: 99996;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://sf1-dycdn-tos.pstatp.com/obj/ies-music/storm_feedback_a91aa8f9aa9c596bedc707e1e36635ed" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          热盘搜        </div>
-        <div class="card-desc">
-          挺不错的网盘搜索网站，跟坑搜应该是一家        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        1961          </span>
-                    <span class="card-love " data-pid="195">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            18            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="197"
-     data-tooltip="跟盘58、热盘搜等属同一家"
-     href="http://www.panmeme.com/" style="z-index: 99995;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://sf1-dycdn-tos.pstatp.com/obj/ies-music/storm_feedback_fa47a11769b64f95fa788f66f067b9cd" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          盘么么        </div>
-        <div class="card-desc">
-          跟盘58、热盘搜等属同一家        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        1693          </span>
-                    <span class="card-love " data-pid="197">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            9            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="199"
-     data-tooltip="下载不用关注微信公众号，相对良心"
-     href="https://www.soyunpan.com/" style="z-index: 99994;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://p99.pstatp.com/origin/pgc-image/4c58ff4eb38449d3a40abdedfd80ccb1" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          搜云盘        </div>
-        <div class="card-desc">
-          下载不用关注微信公众号，相对良心        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        2213          </span>
-                    <span class="card-love " data-pid="199">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            4            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="201"
-     data-tooltip="需要关注公众号，除此之外还算不错"
-     href="https://www.xiaomapan.com/" style="z-index: 99993;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://sf1-dycdn-tos.pstatp.com/obj/ies-music/storm_feedback_69b8e9be5be7cb49cb0f4486d4ab23c1" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          小马盘        </div>
-        <div class="card-desc">
-          需要关注公众号，除此之外还算不错        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        1828          </span>
-                    <span class="card-love " data-pid="201">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            8            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-  
-  <div class="col-12">
-    <div class="section-title "
-         id="7">
-      <i class="icon czs-android"></i>
-      影视APP    </div>
-  </div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="33"
-     data-tooltip="清晰度高，大部分速度快"
-     href="https://mengmiandaxia.com/" style="z-index: 99999;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://sf1-dycdn-tos.pstatp.com/obj/ies-music/storm_feedback_2f082fe4534b326c3684486cff235821" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          蒙面大侠        </div>
-        <div class="card-desc">
-          清晰度高，大部分速度快        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        40310          </span>
-                    <span class="card-love " data-pid="33">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            499            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="203"
-     data-tooltip="知名海外视频社区，资源特别丰富"
-     href="http://www.rr.tv/" style="z-index: 99998;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://sf1-dycdn-tos.pstatp.com/obj/ies-music/storm_feedback_3dcb94b7e00a0537bd16a3adfa8eed7c" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          人人视频        </div>
-        <div class="card-desc">
-          知名海外视频社区，资源特别丰富        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        6149          </span>
-                    <span class="card-love " data-pid="203">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            101            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="206"
-     data-tooltip="播放速度快，需要推广下线获取VIP资源"
-     href="https://po6.app/" style="z-index: 99997;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://p99.pstatp.com/origin/pgc-image/db2948141c614aeb849007e36804bdbb" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          南瓜影视        </div>
-        <div class="card-desc">
-          播放速度快，需要推广下线获取VIP资源        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        6137          </span>
-                    <span class="card-love " data-pid="206">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            128            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="208"
-     data-tooltip="免费无广告，清晰度很好，速度也很快"
-     href="http://www.zhuijuniao.com/" style="z-index: 99996;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://sf1-dycdn-tos.pstatp.com/obj/ies-music/storm_feedback_dedb532b12e20da43515c7846526341d" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          追剧鸟        </div>
-        <div class="card-desc">
-          免费无广告，清晰度很好，速度也很快        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        4810          </span>
-                    <span class="card-love " data-pid="208">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            100            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="210"
-     data-tooltip="有盒子版，播放速度不是太好但可接受"
-     href="http://www.jinritv.tv/" style="z-index: 99995;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://sf1-dycdn-tos.pstatp.com/obj/ies-music/storm_feedback_8b67a11983243456f7a4be048a964c1d" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          今日影视        </div>
-        <div class="card-desc">
-          有盒子版，播放速度不是太好但可接受        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        3477          </span>
-                    <span class="card-love " data-pid="210">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            61            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="212"
-     data-tooltip="播放速度较快，资源较丰富"
-     href="https://dl.juhuitv.com/" style="z-index: 99994;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://sf1-dycdn-tos.pstatp.com/obj/ies-music/storm_feedback_f4e63fff5ed6318ddcc6b727b1dca5cc" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          剧汇TV        </div>
-        <div class="card-desc">
-          播放速度较快，资源较丰富        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        4408          </span>
-                    <span class="card-love " data-pid="212">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            39            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="214"
-     data-tooltip="资源丰富,更新速度快,但高峰期比较卡"
-     href="http://dg100.app/" style="z-index: 99993;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://p99.pstatp.com/origin/pgc-image/e32fd830b61348fc8f635644b3d081e9" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          冬瓜影视        </div>
-        <div class="card-desc">
-          资源丰富,更新速度快,但高峰期比较卡        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        3975          </span>
-                    <span class="card-love " data-pid="214">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            17            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="216"
-     data-tooltip="美剧丰富,播放速度快,但只有安卓版"
-     href="http://www.meijuxia.top/" style="z-index: 99992;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://ae01.alicdn.com/kf/H3e8a4304863742fca2badb81434169eed.png" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          美剧侠        </div>
-        <div class="card-desc">
-          美剧丰富,播放速度快,但只有安卓版        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        1300          </span>
-                    <span class="card-love " data-pid="216">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            7            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="218"
-     data-tooltip="清晰度和流畅度都不错,广告很少"
-     href="http://agmj.tv/" style="z-index: 99991;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://p99.pstatp.com/origin/pgc-image/a9952a1b2a5540d68d350c58c55dc48a" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          阿哥美剧        </div>
-        <div class="card-desc">
-          清晰度和流畅度都不错,广告很少        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        1729          </span>
-                    <span class="card-love " data-pid="218">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            8            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="222"
-     data-tooltip="播放速度较快，目前不需要VIP"
-     href="https://www.wanmeikk.me/static/app/app.html" style="z-index: 99990;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://p99.pstatp.com/origin/pgc-image/4f774792bd004f50afd073a20efbb6a9" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          完美看看        </div>
-        <div class="card-desc">
-          播放速度较快，目前不需要VIP        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        5969          </span>
-                    <span class="card-love " data-pid="222">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            16            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-  
-  <div class="col-12">
-    <div class="section-title "
-         id="8">
-      <i class="icon czs-play-l"></i>
-      资源站    </div>
-  </div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="229"
-     data-tooltip="国内CDN,播放速度很快"
-     href="http://www.bdzy.com" style="z-index: 99999;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://sf1-dycdn-tos.pstatp.com/obj/ies-music/storm_feedback_f2e12a0e41d630d6c87ca234c024d47c" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          百度资源        </div>
-        <div class="card-desc">
-          国内CDN,播放速度很快        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        13421          </span>
-                    <span class="card-love " data-pid="229">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            79            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="231"
-     data-tooltip="资源丰富，更新快，高峰期播放速度较慢"
-     href="https://okzyw.com/" style="z-index: 99998;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://sf1-dycdn-tos.pstatp.com/obj/ies-music/storm_feedback_0d49c2738ddc19713143b98fdf12af9a" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          OK资源站        </div>
-        <div class="card-desc">
-          资源丰富，更新快，高峰期播放速度较慢        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        6440          </span>
-                    <span class="card-love " data-pid="231">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            75            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="233"
-     data-tooltip="资源丰富，高峰期播放速度不快"
-     href="http://www.zuidazy4.com/" style="z-index: 99997;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://ae01.alicdn.com/kf/H25da2009c8ed4a71a08b6848fc4b14c7D.png" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          最大资源网        </div>
-        <div class="card-desc">
-          资源丰富，高峰期播放速度不快        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        7070          </span>
-                    <span class="card-love " data-pid="233">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            116            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="236"
-     data-tooltip="老牌资源站，更新速度快，晚上卡"
-     href="http://www.kuyunzy.co/" style="z-index: 99996;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://sf1-dycdn-tos.pstatp.com/obj/ies-music/storm_feedback_30f79e8b63d23fd3ae5b8b37081863a3" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          酷云资源网        </div>
-        <div class="card-desc">
-          老牌资源站，更新速度快，晚上卡        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        4416          </span>
-                    <span class="card-love " data-pid="236">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            91            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="238"
-     data-tooltip="国内CDN，速度相对较快，清晰度差"
-     href="http://bajiezy.cc/" style="z-index: 99995;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://p99.pstatp.com/origin/pgc-image/344b13350a6b42e2a5507653e13f1555" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          八戒资源网        </div>
-        <div class="card-desc">
-          国内CDN，速度相对较快，清晰度差        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        6164          </span>
-                    <span class="card-love " data-pid="238">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            43            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="240"
-     data-tooltip="没什么特色，跟其他资源站一样"
-     href="http://www.zuixinzy.net/" style="z-index: 99994;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://p99.pstatp.com/origin/pgc-image/8c3901cc839849c6b86e3cf70b524ccc" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          最新资源站        </div>
-        <div class="card-desc">
-          没什么特色，跟其他资源站一样        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        3675          </span>
-                    <span class="card-love " data-pid="240">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            5            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="242"
-     data-tooltip="与其他资源站一样"
-     href="http://www.mahuazy.com/" style="z-index: 99993;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://p99.pstatp.com/origin/pgc-image/c9bb7b7df6b14c9fbb8ecf3335d208e1" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          麻花资源        </div>
-        <div class="card-desc">
-          与其他资源站一样        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        5646          </span>
-                    <span class="card-love " data-pid="242">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            21            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="244"
-     data-tooltip="国内CDN，白天速度快，晚上比较卡"
-     href="http://www.123ku.com/" style="z-index: 99992;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://p99.pstatp.com/origin/pgc-image/cd6b664ed4a34dd6b7a6bbf8044c85e3" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          123酷资源网        </div>
-        <div class="card-desc">
-          国内CDN，白天速度快，晚上比较卡        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        3213          </span>
-                    <span class="card-love " data-pid="244">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            15            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="246"
-     data-tooltip="跟其他资源站一样"
-     href="http://kubozy.co/" style="z-index: 99991;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://p99.pstatp.com/origin/pgc-image/3e29fc9d8a424ae69b068af8e90c31c4" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          酷播资源网        </div>
-        <div class="card-desc">
-          跟其他资源站一样        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        3985          </span>
-                    <span class="card-love " data-pid="246">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            19            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="248"
-     data-tooltip="老牌资源站，更新速度快，播放速度一般"
-     href="http://www.yongjiuzy1.com/" style="z-index: 99990;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://p99.pstatp.com/origin/pgc-image/36c44cbfe80844c2bd97c51506360859" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          永久资源网        </div>
-        <div class="card-desc">
-          老牌资源站，更新速度快，播放速度一般        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        10137          </span>
-                    <span class="card-love " data-pid="248">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            62            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="250"
-     data-tooltip="比较新的一个资源站,目前使用国内CDN,速度较快"
-     href="http://www.juhezyw.com/" style="z-index: 99989;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://p99.pstatp.com/origin/pgc-image/49eefb49568d4bb8b65b77b5a6a24768" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          聚合资源站        </div>
-        <div class="card-desc">
-          比较新的一个资源站,目前使用国内CDN,速度较快        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        6629          </span>
-                    <span class="card-love " data-pid="250">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            34            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-              
-<div class="col-xl-3 col-lg-4 col-md-6">
-  <a class="card tooltip tooltip-bottom "
-     data-pid="252"
-     data-tooltip="国内CDN，速度较快，水印感人"
-     href="http://tiankongzy.com/" style="z-index: 99988;"
-    target='_blank'>
-    <div class="media">
-      <div class="media-left">
-        <figure class="image image-rounded card-tn">
-          <img src="https://p99.pstatp.com/origin/pgc-image/5c0d1c9682b648f7b57fd10cb794c71d" alt="card-tn">
-        </figure>
-      </div>
-      <div class="media-content">
-        <div class="card-title text-truncate">
-          天空资源网        </div>
-        <div class="card-desc">
-          国内CDN，速度较快，水印感人        </div>
-        <div class="card-meta">
-          <span class="card-read">
-            <i class="icon czs-eye-l"></i>
-                        7896          </span>
-                    <span class="card-love " data-pid="252">
-            <i class="icon czs-heart-l"></i>
-                        <span class="card-love-count">
-            2            </span>
-          </span>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-  
-        
-  </div>
-  
-<footer class="footer">
-    <div class="copyright" data-id="">
-    <span class="copyright">
-      Copyright © 2017-2021    </span>
-    手掌导航 - 影视导航第一站    <a class="site-record" target="_blank"
-       href="">
-          </a>
-  </div>
-</footer>
-
-<div class="fix-tools">
-  <div class="fighting">
-    <i class="czs-arrow-up-l"></i>
-  </div>
-  <a class="submit-wrap" href="#" target="_blank">
-    <div class="submit">
-      <i class="icon czs-talk-l"></i>
-    </div>
-    <span class="submit-desc">投稿</span>
-  </a>
-</div>
-
-<div class="login-wrap d-none py-4">
-  <div class="tab-nav justify-content-center" data-tab-content="tab-content">
-    <div class="tab-li active">登陆</div>
-    <div class="tab-li">注册</div>
-  </div>
-  <div class="tab-content p-6" id="tab-content">
-    <form class="form-login tab-item active" method="post">
-      <div class="form-item">
-        <input placeholder="输入用户名" class="username form-field" type="text" name="username">
-      </div>
-      <div class="form-item">
-        <input placeholder="输入密码" class="password form-field" type="password" name="password">
-      </div>
-      <a class="lost text-primary mb-2 d-block" href="http://www.plamtv.com/wp-login.php?action=lostpassword">
-        忘记密码？
-      </a>
-      <ul class="list-unstyled mb-2 d-flex justify-content-between">
-        <!--                <li>-->
-        <!--                    <a class="text-geek" target="_blank" href="-->
-        <!--">-->
-        <!--                        <i class="czs-github"></i>-->
-        <!--                    </a>-->
-        <!--                </li>-->
-        <!--                <li>-->
-        <!--                    <a class="text-danger" target="_blank" href="-->
-        <!--">-->
-        <!--                        <i class="czs-weibo"></i>-->
-        <!--                    </a>-->
-        <!--                </li>-->
-        <!--                <li>-->
-        <!--                    <a class="text-success" target="_blank" href="-->
-        <!--">-->
-        <!--                        <i class="czs-wechat"></i>-->
-        <!--                    </a>-->
-        <!--                </li>-->
-      </ul>
-      <input type="hidden" id="login-security" name="login-security" value="d4314c9e85" /><input type="hidden" name="_wp_http_referer" value="/" />      <input class="btn btn-success btn-block form-login-submit" type="submit" value="登陆" name="submit">
-    </form>
-    <form class="form-register tab-item" method="post">
-      <div class="form-item">
-        <input placeholder="输入用户名" class="username form-field" type="text" name="username">
-      </div>
-      <div class="form-item">
-        <input placeholder="输入邮箱" class="email form-field" type="text" name="email">
-      </div>
-      <div class="form-item">
-        <input placeholder="输入密码" class="password form-field" type="password" name="password">
-      </div>
-      <div class="form-item">
-        <input placeholder="重复密码" class="password form-field" type="password" name="re-password">
-      </div>
-      <input class="btn btn-primary btn-block form-register-submit" type="submit" value="注册" name="submit">
-      <input type="hidden" id="register-security" name="register-security" value="a49b3492f9" /><input type="hidden" name="_wp_http_referer" value="/" />    </form>
-  </div>
-</div>
-<script type='text/javascript' src='js/cherry.min.js' id='cherry-script-js'></script>
-<script type='text/javascript' src='https://cdn.staticfile.org/jquery/3.3.1/jquery.min.js?ver=3.3.1' id='jquery-js'></script>
-<script type='text/javascript' src='https://cdn.staticfile.org/smooth-scroll/16.0.3/smooth-scroll.min.js?ver=16.0.3' id='smooth-scroll-js'></script>
-<script type='text/javascript' src='https://cdn.staticfile.org/js-cookie/latest/js.cookie.min.js?ver=0.1.0' id='cookie-js'></script>
-<script type='text/javascript' src='https://cdn.staticfile.org/switchery/0.8.2/switchery.min.js?ver=0.1.0' id='switchery-js'></script>
-<script type='text/javascript' src='js/app.min.js?ver=0.1.0' id='app-js'></script>
-<script type='text/javascript' src='js/wp-embed.min.js?ver=12.8.8' id='wp-embed-js'></script>
-</main>
-</body>
-</html></div>
+ </body>
+</html>
